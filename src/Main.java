@@ -2,7 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // Leer opciones del usuario
         Scanner opcionUsuario = new Scanner(System.in);
+
+        // Variables
         String nombreCliente = "Juan Perez";
         String tipoDeCuenta = "Corriente";
         double saldoDisponible = 1599.99;
@@ -14,11 +17,13 @@ public class Main {
                 4 - Salir
                 """;
 
+        // Mostar datos de la cuenta
         System.out.println("*".repeat(48));
         System.out.println("\nNombre del cliente: " + nombreCliente);
         System.out.println("Tipo de cuenta: " + tipoDeCuenta + "\n");
         System.out.println("*".repeat(48));
 
+        // Código principal
         for (int i = 0; i < 1;) {
             System.out.println(menu);
             int opcion = opcionUsuario.nextInt();
